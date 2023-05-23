@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/date_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="날짜"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/medicine_name_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="약 이름" />
+
+    <EditText
+        android:id="@+id/dosage_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="용량" />
+
+    <EditText
+        android:id="@+id/alarm_time_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="알람 시간 (예: 08:00)" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/h_button"
+            android:layout_width="50dp"
+            android:layout_height="65dp"
+            android:background="@drawable/good"
+            android:layout_weight="1"
+            android:layout_marginRight="5dp"
+            android:drawableLeft="@drawable/good" />
+
+        <Button
+            android:id="@+id/n_button"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:background="@drawable/normal"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/normal" />
+
+        <Button
+            android:id="@+id/s_button"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:background="@drawable/bad"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+            android:drawableLeft="@drawable/bad" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/save_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="저장" />
+        <Button
+            android:id="@+id/cancel_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="취소" />
+    </LinearLayout>
+
+</LinearLayout>
